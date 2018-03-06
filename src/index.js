@@ -5,7 +5,6 @@ import { createStore } from 'redux';
 import './index.css';
 import Game from './containers/Game';
 import reducer from './reducers';
-//import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 const store = createStore(
@@ -20,5 +19,4 @@ ReactDOM.render(
     document.getElementById('root'),
 );
 
-//ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
