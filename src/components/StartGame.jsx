@@ -5,7 +5,7 @@ import { gameWidth } from '../utils/constants';
 const StartGame = (props) => {
   const button = {
     x: gameWidth / -2, // half width
-    y: -280, // minus means up (above 0)
+    y: -480, // minus means up (above 0)
     width: gameWidth,
     height: 200,
     rx: 10, // border radius
@@ -20,7 +20,7 @@ const StartGame = (props) => {
   const text = {
     textAnchor: 'middle', // center
     x: 0, // center relative to X axis
-    y: -150, // 150 up
+    y: -350, // 150 up
     style: {
       fontFamily: 'Poppins', //'"Joti One", cursive'
       fontSize: 60,
