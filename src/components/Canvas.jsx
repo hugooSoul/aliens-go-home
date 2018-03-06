@@ -8,10 +8,13 @@ import CannonBall from './CannonBall';
 import CurrentScore from './CurrentScore';
 import FlyingObject from './FlyingObject';
 import Heart from './Heart';
+import StartGame from './StartGame';
+import Title from './Title';
 
 const Canvas = (props) => {
 
-  const viewBox = [window.innerWidth / -2, 100 - window.innerHeight, window.innerWidth, window.innerHeight];
+  const gameHeight = 1200;
+  const viewBox = [window.innerWidth / -2, 100 - gameHeight, window.innerWidth, gameHeight];
 
   const style = {
     border: '1px solid black',
@@ -34,9 +37,11 @@ const Canvas = (props) => {
       <CannonBase />
       <CannonBall position={{x: 0, y: -100}}/>
       <CurrentScore score={15} />
-      <FlyingObject position={{x: -150, y: -400}}/>
-      <FlyingObject position={{x: 150, y: -400}}/>
+      <FlyingObject position={{x: -150, y: -300}}/>
+      <FlyingObject position={{x: 150, y: -300}}/>
       <Heart position={{x: -300, y: 35}} />
+      <StartGame onClick={() => console.log('Aliens, Go Home!')} />
+      <Title />
     </svg>
   );
 
