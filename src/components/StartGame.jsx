@@ -20,7 +20,7 @@ const StartGame = (props) => {
   const text = {
     textAnchor: 'middle', // center
     x: 0, // center relative to X axis
-    y: -350, // 150 up
+    y: -150, // 150 up
     style: {
       fontFamily: 'Poppins', //'"Joti One", cursive'
       fontSize: 60,
