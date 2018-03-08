@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import App from '../App';
 import { leaderboardLoaded, loggedIn,
-        moveObjects, startGame } from '../actions/index';
+        moveObjects, startGame, shoot } from '../actions/index';
 
 const mapStateToProps = state => ({
   angle: state.angle,
@@ -22,6 +22,9 @@ const mapDispatchToProps = dispatch => ({
   },
   startGame: () => {
     dispatch(startGame());
+  },
+  shoot: (mousePosition) => {
+    dispatch(shoot(mousePosition))
   },
 });
 
